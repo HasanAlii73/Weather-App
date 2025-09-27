@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="84bb4fc080631c2605f1.css" />
+    <link rel="icon" href="a4a6c530b1283853cdf3.png" />
+  <script defer src="main.js"></script></head>
+  <body>
+
+    <div id="header">
+      <div>
+        <img src="a4a6c530b1283853cdf3.png" alt="AppICon"/>
+        <h1>Weather-App</h1>
+      </div>
+      <div class="switch-container">
+        <span class="unit active" id="celsiusLabel">°C</span>
+        <label class="switch">
+          <input type="checkbox" id="unitSwitch" checked/>
+          <span class="slider"></span>
+        </label>
+        <span class="unit" id="fahrenheitLabel">°F</span>
+      </div>
+    </div>
+
+    <div id="searchBar">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button type="submit" id="searchBtn"><img src="54ff7732bb1a5ff166c6.svg" alt="" class="searchLogo"></button>
+    </div>
+
+    <div id="loading" style="display: none;">
+      <img src="81610fa16c7e56aa2a69.svg" alt="Loading...">
+    </div>
+
+    <div id="mainForcast">
+      <h2 id="cityTitle"></h2>
+      <h4 id="todaysDate"></h4>
+      <p id="currentTemp"></p>
+      <p id="currnetCondition"></p>
+      <div id="currentOthers">
+        <div class="feelsLike othersElement">
+          <img src="5b303e0fc5f5d09104fd.png" alt="feelslike" class="icon" />
+          <span class="label">Feels Like</span>
+          <span class="value"></span>
+        </div>
+        <div class="humidity othersElement">
+          <img src="05cd4608d62d4e67f934.png" alt="feelslike" class="icon" />
+          <span class="label">Humidity</span>
+          <span class="value"></span>
+        </div>
+        <div class="windSpeed othersElement">
+          <img src="b8ff2489d1e9dd48b057.png" alt="feelslike" class="icon" />
+          <span class="label">Wind Speed</span>
+          <span class="value"></span>
+        </div>
+        <div class="pressure othersElement">
+          <img src="c921b53cc0d6711f96f0.png" alt="feelslike" class="icon" />
+          <span class="label">Pressure</span>
+          <span class="value"></span>
+        </div>
+        <div class="UVIndex othersElement">
+          <img src="5b303e0fc5f5d09104fd.png" alt="feelslike" class="icon" />
+          <span class="label">UV Index</span>
+          <span class="value"></span>
+        </div>
+        <div class="visibility othersElement">
+          <img src="4c448e4491b7b7db0f9c.png" alt="feelslike" class="icon" />
+          <span class="label">Visibility</span>
+          <span class="value"></span>
+        </div>
+      </div>
+    </div>
+
+
+    <p id="fiveDayForcastText">5-Day Forcast</p>
+    <div id="fiveDayForcast">
+      <div class="dayForcast day1">
+        <span class="day">Sun</span>
+        <img class="dayImg day1Img" src="b536b7ec7c50667a0b10.png" alt="">
+        <span class="temp"></span>
+        <span class="condition"></span>
+        <span class="highLow"></span>
+      </div>
+      <div class="dayForcast day2">
+        <span class="day">Sun</span>
+        <img class="dayImg day2Img" src="b536b7ec7c50667a0b10.png" alt="">
+        <span class="temp"></span>
+        <span class="condition"></span>
+        <span class="highLow"></span>
+      </div>
+      <div class="dayForcast day3">
+        <span class="day">Sun</span>
+        <img class="dayImg day3Img" src="b536b7ec7c50667a0b10.png" alt="">
+        <span class="temp"></span>
+        <span class="condition"></span>
+        <span class="highLow"></span>
+      </div>
+      <div class="dayForcast day4">
+        <span class="day">Sun</span>
+        <img class="dayImg day4Img" src="b536b7ec7c50667a0b10.png" alt="">
+        <span class="temp"></span>
+        <span class="condition"></span>
+        <span class="highLow"></span>
+      </div>
+      <div class="dayForcast day5">
+        <span class="day">Sun</span>
+        <img class="dayImg day5Img" src="b536b7ec7c50667a0b10.png" alt="">
+        <span class="temp"></span>
+        <span class="condition"></span>
+        <span class="highLow"></span>
+      </div>
+    </div>
+
+
+    <p id="weatherDetailsText">Weather Details</p>
+    <div id="weatherDetails">
+      <div class="sunrise weatherDetail">
+        <img src="0606210d8c5b1602db54.png" alt="">
+        <span>Sunrise</span>
+        <span></span>
+      </div>
+      <div class="sunset weatherDetail">
+        <img src="04304bf1d519a6dfaa8e.png" alt="">
+        <span>Sunset</span>
+        <span></span>
+      </div>
+      <div class="chanceOfRain weatherDetail">
+        <img src="08525d542ae0889429a7.png" alt="">
+        <span>Chance Of Rain</span>
+        <span></span>
+      </div>
+      <div class="cloudCover weatherDetail">
+        <img src="474546d2dae26e8985be.png" alt="">
+        <span>Cloud Cover</span>
+        <span></span>
+      </div>
+    </div>
+
+
+    <div id="footer">
+      <p>
+        © 2025 <a href="https://github.com/HasanAlii73">hsn73</a> All rights
+        reserved.
+      </p>
+      <p>weather data provided by VisulaCrossing</p>
+    </div>
+
+    <!-- https://mutopia7.github.io/weather/ -->
+    <!-- https://github.com/mutopia7/weather -->
+
+    <script src="694107d3008050754e1a.js"></script>
+  </body>
+</html>
